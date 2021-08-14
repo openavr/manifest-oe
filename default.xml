@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Groups allow repo to restrict which projects to download and are specified with
+the '-g' option of 'init' (see 'repo help init'). Projects in the "notdefault"
+group are not automatically downloaded by repo.
+-->
+
+<manifest>
+
+    <remote name="oe"          alias="origin"  fetch="git://git.openembedded.org" />
+    <remote name="yocto"       alias="origin"  fetch="git://git.yoctoproject.org" />
+    <remote name="openavr"     alias="origin"  fetch="git://github.com/openavr" />
+
+    <project name="manifest-oe"           path="."                    remote="openavr"    groups="oe"   revision="main" />
+
+    <project name="openembedded-core"     path="oe/oe-core"           remote="oe"         groups="oe"   revision="master" />
+    <project name="bitbake"               path="oe/bitbake"           remote="oe"         groups="oe"   revision="master" />
+    <project name="meta-openembedded"     path="oe/meta-oe"           remote="oe"         groups="oe"   revision="master" />
+    <project name="meta-yocto"            path="oe/meta-yocto"        remote="yocto"      groups="oe"   revision="master" />
+    <project name="meta-arm"              path="oe/meta-arm"          remote="yocto"      groups="oe"   revision="master" />
+    <project name="meta-ti"               path="oe/meta-ti"           remote="yocto"      groups="oe"   revision="master" />
+    <project name="meta-raspberrypi"      path="oe/meta-raspberrypi"  remote="yocto"      groups="oe"   revision="master" />
+    <project name="meta-openavr"          path="oe/meta-openavr"      remote="openavr"    groups="oe"   revision="master" />
+
+</manifest>
