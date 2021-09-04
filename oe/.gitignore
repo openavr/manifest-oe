@@ -1,0 +1,8 @@
+bitbake
+meta-arm
+meta-oe
+meta-openavr
+meta-raspberrypi
+meta-ti
+meta-yocto
+oe-core
