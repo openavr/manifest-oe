@@ -8,9 +8,11 @@ group are not automatically downloaded by repo.
 
 <manifest>
 
-    <remote name="oe"          alias="origin"  fetch="https://git.openembedded.org" />
+    <remote name="oe-slow"     alias="origin"  fetch="https://git.openembedded.org" />
+    <remote name="oe"          alias="origin"  fetch="https://github.com/openembedded" />
     <remote name="yocto"       alias="origin"  fetch="https://git.yoctoproject.org" />
     <remote name="openavr"     alias="origin"  fetch="https://github.com/openavr" />
+    <remote name="rpi"         alias="origin"  fetch="https://github.com/agherzan" />
 
     <project name="manifest-oe"           path="."                    remote="openavr"    groups="oe"   revision="main" />
 
@@ -20,7 +22,7 @@ group are not automatically downloaded by repo.
     <project name="meta-yocto"            path="oe/meta-yocto"        remote="yocto"      groups="oe"   revision="master" />
     <project name="meta-arm"              path="oe/meta-arm"          remote="yocto"      groups="oe"   revision="master" />
     <project name="meta-ti"               path="oe/meta-ti"           remote="yocto"      groups="oe"   revision="master" />
-    <project name="meta-raspberrypi"      path="oe/meta-raspberrypi"  remote="yocto"      groups="oe"   revision="master" />
+    <project name="meta-raspberrypi"      path="oe/meta-raspberrypi"  remote="rpi"        groups="oe"   revision="master" />
     <project name="meta-openavr"          path="oe/meta-openavr"      remote="openavr"    groups="oe"   revision="main" />
 
     <project name="yocto-docs"            path="yocto-docs"           remote="yocto"      groups="oe"   revision="master" />
