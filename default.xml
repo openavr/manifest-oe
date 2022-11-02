@@ -23,4 +23,6 @@ group are not automatically downloaded by repo.
     <project name="meta-raspberrypi"      path="oe/meta-raspberrypi"  remote="yocto"      groups="oe"   revision="master" />
     <project name="meta-openavr"          path="oe/meta-openavr"      remote="openavr"    groups="oe"   revision="main" />
 
+    <project name="yocto-docs"            path="yocto-docs"           remote="yocto"      groups="oe"   revision="master" />
+
 </manifest>
